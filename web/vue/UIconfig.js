@@ -12,7 +12,7 @@ const CONFIG = {
   },
   ui: {
     ssl: false,
-    host: 'localhost',
+    host: 'jp.getble.cn',
     port: 3000,
     path: '/'
   },
