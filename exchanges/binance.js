@@ -406,6 +406,7 @@ Trader.getCapabilities = function() {
       'POWR',
       'QTUM',
       'ZEC',
+      'RDN',
     ],
     markets: [
       // https://www.binance.com/exchange/public/product
@@ -415,6 +416,11 @@ Trader.getCapabilities = function() {
         pair: ['BTC', 'BCC'],
         minimalOrder: { amount: 0.001, unit: 'asset' },
         precision: 0.000001,
+      },
+      {
+        pair: ['BTC', 'RDN'],
+        minimalOrder: { amount: 1, unit: 'asset' },
+        precision: 0.00000001,
       },
       {
         pair: ['BTC', 'BNB'],
