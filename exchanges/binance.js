@@ -150,8 +150,8 @@ Trader.prototype.getPortfolio = function(callback) {
       { name: this.asset, amount: assetAmount },
       { name: this.currency, amount: currencyAmount },
     ];
-
-    return callback(err.message, portfolio);
+    
+    return callback(err, portfolio);
   };
 
   this.binance.account({}, _.bind(setBalance, this));
@@ -190,7 +190,8 @@ Trader.prototype.getTicker = function(callback) {
       bid: parseFloat(result.bidPrice),
     };
 
-    callback(err.message, ticker);
+
+    callback(err, ticker);
   };
 
   // Not exposed by the API yet, have to do it the hard way

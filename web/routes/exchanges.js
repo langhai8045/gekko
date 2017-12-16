@@ -6,7 +6,7 @@ var util = require(__dirname + '/../../core/util');
 
 var config = {};
 
-config.debug = false;
+config.debug = true;
 config.silent = false;
 
 util.setConfig(config);
